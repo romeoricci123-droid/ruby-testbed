@@ -8,4 +8,8 @@ RSpec.describe "greeting" do
   it "has the expected version" do
     expect(VERSION).to eq("0.1.0")
   end
+
+  it "returns the greeting in all capital letters" do
+    expect(shout).to eq("HELLO FROM RUBY-TESTBED")
+  end
 end
